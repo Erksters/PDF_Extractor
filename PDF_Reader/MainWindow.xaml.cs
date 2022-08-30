@@ -20,6 +20,7 @@ namespace PDF_Reader
         Dictionary<String, String> UserInputDictionary = new Dictionary<String, String>();
         Boolean User_Selected_PDF = false;
         Boolean User_Selected_Output_Directory = false;
+        PdfArray annotArray;
 
         public MainWindow()
         {
@@ -90,12 +91,11 @@ namespace PDF_Reader
         {
             PdfReader reader = new PdfReader(PDF_Name);
             int Pages = reader.NumberOfPages;
-
             for (int i = 1; i < Pages +1; i++)
             {
                 //Find Page annotations (if any)
                 PdfDictionary pageDict = reader.GetPageN(i);
-                PdfArray annotArray = pageDict.GetAsArray(PdfName.ANNOTS);
+                annotArray = pageDict.GetAsArray(PdfName.ANNOTS);
 
                 if (annotArray != null && annotArray.Length > 0)
                 {
@@ -137,7 +137,7 @@ namespace PDF_Reader
 
             File.WriteAllText(Output_Path+"\\"+ PDF_SafeFileName.Substring(0,PDF_SafeFileName.Length - 4) + ".csv", csv);
 
-            System.Windows.MessageBox.Show("Created CSV file Successfully. I'm shutting down now!");
+            System.Windows.MessageBox.Show("Created CSV file Successfully. " + "I copied " + UserInputDictionary.Count.ToString() + " Lines" + "I'm shutting down now!");
             App.Current.Shutdown();
         }
 
@@ -153,7 +153,7 @@ namespace PDF_Reader
 
             File.WriteAllText(Output_Path + "\\" + PDF_SafeFileName.Substring(0, PDF_SafeFileName.Length - 4) + ".json", json);
 
-            System.Windows.MessageBox.Show("Created JSON file Successfully. I'm shutting down now!");
+            System.Windows.MessageBox.Show("Created JSON file Successfully. " + "I copied " + UserInputDictionary.Count.ToString() + " Lines" + "I'm shutting down now!");
             App.Current.Shutdown();
 
 

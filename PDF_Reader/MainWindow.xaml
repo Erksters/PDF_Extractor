@@ -16,7 +16,7 @@
         <Label x:Name="Path_To_Output_Directory" HorizontalAlignment="Left" Margin="293,169,0,0" VerticalAlignment="Top" Height="46" Width="498">
 
 
-            <TextBlock x:Name="Output_Directory_TextBlock"  HorizontalAlignment="Center" TextWrapping="Wrap" Text="Select an folder to dump json and CSV file" VerticalAlignment="Center" Height="20" Width="237"/>
+            <TextBlock x:Name="Output_Directory_TextBlock"  HorizontalAlignment="Center" TextWrapping="Wrap" Text="Select a folder to dump JSON or CSV file" VerticalAlignment="Center" Height="20" Width="237"/>
         </Label>
 
 

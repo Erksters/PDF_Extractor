@@ -7,23 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="Convert_Button" Content="Create CSV File" HorizontalAlignment="Left" Margin="243,232,0,0" VerticalAlignment="Top" Click="Convert_Button_Click" Height="48" Width="100" IsEnabled="False"/>
-        <Button x:Name="File_Button" Content="Open File Explorer" HorizontalAlignment="Left" Margin="323,29,0,0" VerticalAlignment="Top" Click="File_Button_Click" Height="44" Width="118"/>
-        <Label x:Name="Title_Label" Content="Select a PDF file to begin" HorizontalAlignment="Left" Margin="69,30,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Convert_Button" Content="Create CSV File" HorizontalAlignment="Left" Margin="250,339,0,0" VerticalAlignment="Top" Click="Convert_Button_Click" Height="48" Width="100" IsEnabled="False"/>
+        <Button x:Name="File_Button" Content="Open File Explorer" HorizontalAlignment="Center" Margin="0,94,0,0" VerticalAlignment="Top" Click="File_Button_Click" Height="44" Width="118"/>
+        <Label x:Name="Title_Label" Content="Select a PDF file to begin" HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top"/>
 
 
 
-        <Label x:Name="Path_To_Output_Directory" HorizontalAlignment="Left" Margin="34,127,0,0" VerticalAlignment="Top" Height="307" Width="247">
+        <Label x:Name="Path_To_Output_Directory" HorizontalAlignment="Left" Margin="293,169,0,0" VerticalAlignment="Top" Height="46" Width="498">
 
 
-            <TextBlock x:Name="Output_Directory_TextBlock"  HorizontalAlignment="Center" TextWrapping="Wrap" Text="Select an folder to dump json and CSV file" VerticalAlignment="Center" Height="200" Width="237"/>
+            <TextBlock x:Name="Output_Directory_TextBlock"  HorizontalAlignment="Center" TextWrapping="Wrap" Text="Select an folder to dump json and CSV file" VerticalAlignment="Center" Height="20" Width="237"/>
         </Label>
 
 
 
-        <Button x:Name="Folder_Button" Content="Open Folder Explorer" HorizontalAlignment="Left" Margin="308,127,0,0" VerticalAlignment="Top" Height="46" Width="148" Click="Folder_Button_Click_1"/>
-        <Label Content="or" HorizontalAlignment="Left" Margin="371,243,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="JSON_Button" Content="Create JSON File" HorizontalAlignment="Left" Margin="430,232,0,0" VerticalAlignment="Top" Height="44" Width="116" Click="JSON_Button_Click" IsEnabled="False"/>
+        <Button x:Name="Folder_Button" Content="Open Folder Explorer" HorizontalAlignment="Center" Margin="0,244,0,0" VerticalAlignment="Top" Height="46" Width="148" Click="Folder_Button_Click_1"/>
+        <Label Content="or" HorizontalAlignment="Left" Margin="379,348,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="JSON_Button" Content="Create JSON File" HorizontalAlignment="Left" Margin="426,339,0,0" VerticalAlignment="Top" Height="44" Width="116" Click="JSON_Button_Click" IsEnabled="False"/>
 
 
 
